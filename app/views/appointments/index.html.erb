@@ -1,0 +1,9 @@
+<h1>Appointments for user <%= Current.user.short_id %></h1>
+
+<div id='new_appointment'>
+  <%= render partial: 'form', locals: { appointment: @appointment } %>
+</div>
+
+<div id="appointment_collection">
+  <%= render partial: 'appointments', locals: { appointments: @appointments } %>
+</div>

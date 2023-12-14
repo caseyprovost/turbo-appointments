@@ -1,0 +1,5 @@
+<%# locals: (appointments:) -%>
+<h2>You have <span id="appointment_count"><%= appointments.length %></span> appointments</h2>
+<div id="appointments">
+  <%= render partial: 'appointments/appointment', collection: appointments %>
+</div>
