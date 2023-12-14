@@ -1,24 +1,16 @@
-# README
+# TurboSchedule
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Take-home coding exercise for front-end candidates at HouseAccount
 
-Things you may want to cover:
+### Expected result
 
-* Ruby version
+https://github.com/rails/importmap-rails/assets/10076/662e1327-3416-4ac8-988b-7673708e1e4a
 
-* System dependencies
+### Your assignment
 
-* Configuration
+https://github.com/rails/importmap-rails/assets/10076/e44d25ac-9f9d-457f-825a-52842ea8c3ec
 
-* Database creation
+### The codebase
 
-* Database initialization
+https://github.com/rails/importmap-rails/assets/10076/259f440f-caae-47f2-98c6-c8a608aeb822
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
