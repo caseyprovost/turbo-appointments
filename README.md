@@ -1,6 +1,8 @@
 # TurboSchedule
 
-Take-home coding exercise for front-end candidates at HouseAccount
+Take-home coding exercise for front-end candidates at HouseAccount.
+
+Current opening: https://jobs.rubyonrails.org/jobs/474
 
 ### Expected result
 
