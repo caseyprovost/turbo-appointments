@@ -40,20 +40,7 @@ The number in parenthesis (53238 in the image above) is the timestamp of when th
 
 There are also tests that you can run with `rspec` that should pass before and after your code changes.
 
-### Assignment #2: display validation errors without a full page reload
-
-Appointments can only be created for dates in the future that do not already have appointments.
-
-https://github.com/HouseAccountEng/turbo_schedule/blob/88fb12742092fd0d60cebb0dba6feb3b2bb7e377/app/models/appointment.rb#L3-L4
-
-When users try to create an invalid appointment, a validation error is displayed.
-
-![error](https://github.com/HouseAccountEng/turbo_schedule/assets/10076/7cb7bce0-c242-4367-a6ee-21abae0d5ea0)
-
-This flow works but, once again, is slow: the full page is reloaded in case of error.
-Your second assignment is to add the error to the DOM without modifying the rest of the page.
-
-### Assignment #3: let users cancel appointments without a full page reload
+### Assignment #2: let users cancel appointments without a full page reload
 
 Currently users cancel appointments by selecting an appointment and clicking on "Destroy this appointment".
 
@@ -64,30 +51,22 @@ Currently users cancel appointments by selecting an appointment and clicking on 
 https://github.com/HouseAccountEng/turbo_schedule/blob/88fb12742092fd0d60cebb0dba6feb3b2bb7e377/app/controllers/appointments_controller.rb#L21-L22
 
 This flow works but, once again, is slow: the full page is reloaded.
-Your third assignment is to remove the canceled appointment from the DOM without modifying the rest of the page.
+Your second assignment is to remove the canceled appointment from the DOM without modifying the rest of the page.
 
-### Assignment #4: prevent users from picking invalid dates
+### Assignment #3: prevent users from picking invalid dates
 
 Appointments can only be created for dates in the future that do not already have appointments.
+
+https://github.com/HouseAccountEng/turbo_schedule/blob/88fb12742092fd0d60cebb0dba6feb3b2bb7e377/app/models/appointment.rb#L3-L4
+
 The current interface doesn't give any indication of this rule, therefore it's easy for users to pick an invalid date.
 
-Your fourth assignment is to ensure as much as possible that users can only pick valid dates from the calendar.
+Your third assignment is to ensure as much as possible that users can only pick valid dates from the calendar.
 In order to do this, you are free to use any third-party calendar library. Users should be able to select only valid dates.
 
 Here's something to consider. While the user is on the page, someone else might book an appointment on a future date.
 Then, all of a sudden, that date will not be available anymore. 
 If possible, your calendar should reflect this: as soon as any user picks a date, that date becomes unavailable for all other users (without needing to reload the page).
-
-<!--
-### Assignment #5: make any CSS improvement you deem appropriate
-
-Currently the application links to [Simple.css](https://simplecss.org/) to have some basic styling
-
-https://github.com/HouseAccountEng/turbo_schedule/blob/88fb12742092fd0d60cebb0dba6feb3b2bb7e377/app/views/layouts/application.html.erb#L8
-
-Your fifth assignment is to replace Simple.css with a modern framework like [Tailwind CSS](https://tailwindcss.com/docs/guides/ruby-on-rails)
-and to apply any classes that you deem appropriate to keep it usable and responsive and different widths.
--->
 
 ## Videos
 
