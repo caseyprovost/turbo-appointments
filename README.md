@@ -22,7 +22,7 @@ Once you are done with an assignment, create a `git commit` with your code chang
 to communicate anything you deem important (what choices you made, why you went a certain route, and so on).
 If possible, have a separate commit for each assignment.
 
-Once you are done with the code changes, simply open a Pull Request against the `main` branch with your commits. Thanks!
+Once you are done with the code changes, create a ZIP file of your repository and send it back to us. Thanks!
 
 ### Assignment #1: let users create appointments without a full page reload
 
