@@ -13,7 +13,6 @@ class AppointmentsController < ApplicationController
 
   def destroy
     @appointment.destroy!
-    redirect_to root_path
   end
 
 private

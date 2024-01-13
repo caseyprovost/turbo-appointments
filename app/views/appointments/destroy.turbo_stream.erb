@@ -1,0 +1,4 @@
+<%= turbo_stream.remove dom_id(@appointment) %>
+<%= turbo_stream.update "appointment_collection" do %>
+  <%= render partial: "appointments/appointments", locals: { appointments: Current.user.appointments } %>
+<% end %>
