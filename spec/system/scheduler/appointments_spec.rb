@@ -1,6 +1,7 @@
 RSpec.describe 'When I head to the home page' do
-  before { visit '/' }
-
+  before do
+    visit root_path
+  end
 
   specify 'I can create, update, search, and destroy appointments' do
     expect(page).to have_text 'You have 0 appointments'
@@ -15,6 +16,7 @@ RSpec.describe 'When I head to the home page' do
       fill_in 'Scheduled on', with: '12/12/2035'
       click_on 'Create Appointment'
     end
+
     expect(page).to have_text 'You have 1 appointment'
     expect(page).to have_text 'Scheduled on December 12, 2035'
 

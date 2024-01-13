@@ -7,14 +7,8 @@ class AppointmentsController < ApplicationController
   end
 
   def create
-    @appointment = Current.user.appointments.new appointment_params
-
-    if @appointment.save
-      redirect_to root_path
-    else
-      @appointments = Current.user.appointments
-      render :index, status: :unprocessable_entity
-    end
+    @appointment = Current.user.appointments.new(appointment_params)
+    @success = @appointment.save
   end
 
   def destroy
@@ -25,7 +19,7 @@ class AppointmentsController < ApplicationController
 private
 
   def set_appointment
-    @appointment = Appointment.find params[:id]
+    @appointment = Appointment.find(params[:id])
   end
 
   def appointment_params

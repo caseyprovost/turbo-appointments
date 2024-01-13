@@ -1,5 +1,5 @@
 <%# locals: (appointment:) -%>
-<div id="<%= dom_id appointment %>">
+<div id="<%= dom_id(appointment) %>">
   <details>
     <summary>Scheduled on <%= appointment.scheduled_on.to_fs :long %></summary>
     <%= button_to "Destroy this appointment", appointment, method: :delete %>
