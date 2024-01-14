@@ -10,6 +10,7 @@ Current opening: https://jobs.rubyonrails.org/jobs/474
 1. Run `bundle install` to install dependencies
 1. Run `rails s` to start the Rails server
 1. Open http://localhost:3000 in your browser
+1. brew services start redis
 
 ![setup](https://github.com/HouseAccountEng/turbo_schedule/assets/10076/dc830999-6bfc-4acb-9fc4-f18b5d189b00)
 
