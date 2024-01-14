@@ -1,4 +1,6 @@
 RSpec.describe 'When I head to the home page' do
+  include FlatpickrHelpers
+
   before do
     visit root_path
   end
@@ -12,10 +14,9 @@ RSpec.describe 'When I head to the home page' do
     expect(page).to have_text %{Scheduled on can't be blank}
 
     # create (valid)
-    within('#new_appointment') do
-      fill_in 'Scheduled on', with: '12/12/2035'
-      click_on 'Create Appointment'
-    end
+    select_date("#appointment_scheduled_on", day: 12, month: 12, year: 2035)
+
+    click_on 'Create Appointment'
 
     expect(page).to have_text 'You have 1 appointment'
     expect(page).to have_text 'Scheduled on December 12, 2035'
