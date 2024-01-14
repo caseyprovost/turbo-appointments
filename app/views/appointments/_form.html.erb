@@ -15,7 +15,12 @@
   <fieldset>
     <legend>Create an appointment</legend>
     <%= form.label :scheduled_on, 'Scheduled on' %>
-    <%= form.date_field :scheduled_on %>
+    <%= form.date_field :scheduled_on, data: {
+         controller: "flatpickr",
+         flatpickr_min_date: Time.current + 1.day,
+         flatpickr_disable: Appointment.pluck(:scheduled_on)
+      }
+    %>
     <%= form.submit %>
   </fieldset>
 <% end %>

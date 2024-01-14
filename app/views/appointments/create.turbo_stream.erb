@@ -2,13 +2,6 @@
   <%= turbo_stream.update "appointment_collection" do %>
     <%= render partial: "appointments/appointments", locals: { appointments: Current.user.appointments } %>
   <% end %>
-
-  <%= turbo_stream.update "new_appointment",
-      partial: "/appointments/form",
-      locals: {
-        appointment: Current.user.appointments.new
-      }
-  %>
 <% else %>
   <%= turbo_stream.update "new_appointment",
       partial: "/appointments/form",

@@ -1,6 +1,6 @@
 <h1>Appointments for user <%= Current.user.short_id %></h1>
 
-<%#= turbo_stream_from Current.user, :appointments %>
+<%= turbo_stream_from :appointments %>
 
 <div id='new_appointment'>
   <%= render partial: 'form', locals: { appointment: @appointment } %>
